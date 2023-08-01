@@ -3,8 +3,9 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Belanosima', sans-serif;
 }
-img{
+img,video{
     width: 100%;
 }
 ul{
@@ -19,51 +20,93 @@ a{
 body{
     font-family: 'Belanosima', sans-serif;
 }
-#menu{
-    text-align: center;
-}
-@media (min-width: 768px) { 
-    /*=== Aplicando CSS al encabezado===*/
+/* || ENCABEZADO/ NAVBAR ||*/
+@media (min-width: 768px){
     #encabezado{
-        display: grid;
-        grid-template-columns: 1fr 2fr; /*Medidas: px em rem % fr*/
+        display: flex;/*para poner las cosas del head unas al lado de otras*/
+        justify-content: space-between;/*separar las cosas del head*/
         align-items: center;
+        position: fixed;
+        background-color: #FC7300;
+        z-index: 1000;
     }
     #menu{
-        display: grid;
-        grid-template-columns: 2fr 1fr;
+        width: 60%;
     }
-    #opcionesIzquierdo{
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
+    #logo{
+        width: 15%;
     }
-    /*=== Aplikcando CSS a la seccioin productos===*/
-    #productos{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+
+    #opciones{
+        display: flex;
+        justify-content: space-around;
     }
-    /*=== Aplicando CSS a la Galería===*/
-    section#galeria{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
+    ul#opciones li a{ /*le aviso al css que tengo un a dentro de li dentro de ul*/
+        font-size: 1.4rem;
+        color: black;
+        position: relative;
+        text-decoration: none;
+    }
+    ul#opciones li a::before{
+        content: '';
+        width: 0%;
+        background-color: #00425A;
+        height: 4px;
+        position: absolute;
+        bottom: -4px;
+        transition: all 0.9s;
+    }
+    ul#opciones li a:hover::before{
+        width: 100%;
+    }
+    ul#opciones .dropdown-menu li a:hover::before{
+        width: 88%;
+    }
+    ul#opciones li a:hover{
+        color:#00425A;
     }
 }
+/* || BANNER || */
+#banner{
+    position: relative;
+}
+#subtituloBanner{
+    position: absolute;
+    top: 400px;
+    font-size: 4rem;
+    color: #EFF5F5;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+/* ||QUIENES SOMOS SECTION|| */
+#somos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #EFF5F5;
+    color: #181823;
+    padding: 5%;
+}
 
+/* || FOOTER || */
 #piePagina{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr 0.5fr;
     justify-items: center;
     align-items: center;
-    background-color: blue;
-    color: white;
+    background-color: #181823;
+    color: #EFF5F5;
+    text-align: center;
+    padding: 10px;
 }
+
 #redesSociales{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 10px;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
 }
 ion-icon{
-    color: white;
+    color: #EFF5F5;
     font-size: 2rem;
 }

@@ -17,16 +17,16 @@
                 <img src="./img/logo-UNTREFF.webp" alt="Logo UNTREF">
             </figure>
             <div id="menu">
-                <nav id="menuIzquierdo">
-                    <ul id="opcionesIzquierdo">
-                        <li><a href="#">Inicio</a></li>
+                <nav>
+                    <ul id="opciones">
+                        <li><a href="#banner">Inicio</a></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 Nosotros
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">¿Quiénes Somos?</a></li>
+                                <li><a class="dropdown-item" href="#Somos">¿Quiénes Somos?</a></li>
                                 <li><a class="dropdown-item" href="#">¿Porqué elegirnos?</a></li>
                                 <li><a class="dropdown-item" href="#">Propuesta Educativa</a></li>
                             </ul>
@@ -36,11 +36,24 @@
                     </ul>
             </div>
         </header>
-
-        <section>
-            
+        <section id="banner">
+            <video src="./video/BANNER-UNTREFF SCHOOL.mp4" autoplay loop muted></video>
+            <h2 id="subtituloBanner">UNTREFF - SCHOOL</h2>
         </section>
+        <section id="Somos">
+            <div>
+                <h2>¿Quiénes Somos?</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates ipsam quaerat ad dolore maiores
+                    rem! Esse cupiditate quidem tempora, fugit, unde quaerat totam culpa quia magnam deleniti, ex illum
+                    placeat?</p>
+            </div>
+            <div>
+                <figure>
+                    <img src="./img/Quienes-Somos.webp" alt="QuienesSomos">
+                </figure>
+            </div>
 
+        </section>
         <footer id="piePagina">
             <div id="redes">
                 <ul id="redesSociales">
@@ -48,7 +61,8 @@
                                 name="logo-instagram"></ion-icon></a></li>
                     <li><a href="https://www.facebook.com" target="_blank"><ion-icon
                                 name="logo-facebook"></ion-icon></a></li>
-                    <li><a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube fa-xl" style="color: #ffffff;"></i></a></li>
+                    <li><a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube fa-xl"
+                                style="color: #ffffff;"></i></a></li>
                 </ul>
             </div>
             <div id="mapa">
@@ -62,14 +76,13 @@
                 <h3>Contacto</h3>
             </div>
             <div id="subir">
-                <a href="#container"><ion-icon name="chevron-up-circle-outline"></ion-icon></a>
+                <a href="#banner"><ion-icon name="chevron-up-circle-outline"></ion-icon></a>
             </div>
         </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous">
-    </script>
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+        </script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>

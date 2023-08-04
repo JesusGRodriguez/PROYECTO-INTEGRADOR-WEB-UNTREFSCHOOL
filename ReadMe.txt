@@ -10,3 +10,7 @@ subo como corresponde
 Editado numero 2!! 3/8/2023
 Pues ya estaria la pagina!
 Aun me falta configurar para que sea responsive pero no lo estaria logrando como corresponde
+
+ULTIMO EDIT!! 4/8/2023
+Ya la configure lo mas que pude.
+No consigo ajustar bien para que se vea en 320px

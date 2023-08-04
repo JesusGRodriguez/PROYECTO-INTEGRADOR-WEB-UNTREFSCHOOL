@@ -6,3 +6,7 @@ solicitada en la consigna. Tengo muchas ideas sobre que hacer en el proyecto!
 Editado!! 1/8/2023
 Estare tratando de terminarlo mañana miercoles asi el jueves ya le doy las ultimas revisadas y lo
 subo como corresponde
+
+Editado numero 2!! 3/8/2023
+Pues ya estaria la pagina!
+Aun me falta configurar para que sea responsive pero no lo estaria logrando como corresponde

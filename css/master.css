@@ -20,51 +20,56 @@ a{
 body{
     font-family: 'Belanosima', sans-serif;
 }
+h2{
+    text-align: center;
+}
+p{
+    font-size: 1.2rem;
+}
 /* || ENCABEZADO/ NAVBAR ||*/
-@media (min-width: 768px){
-    #encabezado{
-        display: flex;/*para poner las cosas del head unas al lado de otras*/
-        justify-content: space-between;/*separar las cosas del head*/
-        align-items: center;
-        position: fixed;
-        background-color: #FC7300;
-        z-index: 1000;
-    }
-    #menu{
-        width: 60%;
-    }
-    #logo{
-        width: 15%;
-    }
+#encabezado{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: #FC7300;
+    z-index: 1000;
+}
+#menu{
+    width: 65%;
+}
+#logo{
+    width: 10%;
+}
 
-    #opciones{
-        display: flex;
-        justify-content: space-around;
-    }
-    ul#opciones li a{ /*le aviso al css que tengo un a dentro de li dentro de ul*/
-        font-size: 1.4rem;
-        color: black;
-        position: relative;
-        text-decoration: none;
-    }
-    ul#opciones li a::before{
-        content: '';
-        width: 0%;
-        background-color: #00425A;
-        height: 4px;
-        position: absolute;
-        bottom: -4px;
-        transition: all 0.9s;
-    }
-    ul#opciones li a:hover::before{
-        width: 100%;
-    }
-    ul#opciones .dropdown-menu li a:hover::before{
-        width: 88%;
-    }
-    ul#opciones li a:hover{
-        color:#00425A;
-    }
+#opciones{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1%;
+}
+ul#opciones li a{
+    font-size: 1.4rem;
+    color: #181823;
+    position: relative;
+    text-decoration: none;
+}
+ul#opciones li a::before{
+    content: '';
+    width: 0%;
+    background-color: #00425A;
+    height: 4px;
+    position: absolute;
+    bottom: -4px;
+    transition: all 0.9s;
+}
+ul#opciones li a:hover::before{
+    width: 100%;
+}
+ul#opciones .dropdown-menu li a:hover::before{
+    width: 88%;
+}
+ul#opciones li a:hover{
+    color:#00425A;
 }
 /* || BANNER || */
 #banner{
@@ -81,24 +86,157 @@ body{
     text-align: center;
 }
 /* ||QUIENES SOMOS SECTION|| */
-#somos{
+#quienesSomos{
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: #EFF5F5;
     color: #181823;
+    padding: 3%;
+}
+#tituloImagen{
+    padding-top: 5%;
+}
+#textoSomos{
+    text-align: right;
+    padding: 3%;
+    padding-top: 25%;
+}
+/* ||PORQUE ELEGIRNOS SECTION|| */
+#porqueElegirnos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #00425A;
+    color: #EFF5F5;
+    padding: 3%;
+}
+#porque{
+    padding-top: 10%;
+    
+}
+#tituloTexto{
+    text-align: center;
+}
+#imagen{
     padding: 5%;
 }
-
+/* ||PROPUESTAS EDUCATIVAS SECTION|| */
+#propuestaTitulo{
+    background-color: #EFF5F5;
+    color: #181823;
+    padding-top: 6%;
+    padding-bottom: 4%;
+    font-size: 2.5rem;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+#propuesta{
+    display: flex;
+    flex-wrap: wrap;
+}
+section#propuesta article{
+    width: 25%;
+    padding: 3%;
+    position: relative;
+    background-color: #EFF5F5;
+    color: #181823;
+    text-align: center;
+}
+.botonDetalle{
+    color: #EFF5F5;
+    background-color: #00425A;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.8s;
+}
+.botonDetalle:hover{
+    cursor: pointer;
+    color: #00425A;
+    background-color: #EFF5F5;
+    text-transform: uppercase;
+    border: 2px solid #181823;
+    box-shadow: 5px 5px 5px #181823;
+}
+/* ||ULTIMAS NOTICIAS SECTION|| */
+#noticiasTitulo{
+    background-color: #00425A;
+    color: #EFF5F5;
+    padding-top: 6%;
+    padding-bottom: 2%;
+    padding-left: 3%;
+    font-size: 3.5rem;
+    text-align: left;
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+#noticias{
+    display: flex;
+    flex-wrap: wrap;
+}
+section#noticias article{
+    width: 50%;
+    padding: 2%;
+    position: relative;
+    background-color: #00425A;
+    color: #EFF5F5;
+    text-align:justify;
+}
 /* || FOOTER || */
+#sectionRedesTitulo{
+    position: relative;
+}
+#redesTitulo{
+    background-color: #181823;
+    color: #EFF5F5;
+    padding-left: 10%;
+    padding-top: 1.3%;
+    font-size: 2rem;
+    text-align: left;
+    width: 30%;
+    margin: auto;
+    position: absolute;
+}
+#contacto{
+    padding-bottom: 15%;
+}
+#contactoTitulo{
+    padding-left: 13%;
+    padding-top: 10%;
+}
+ul#link li a{ /*le aviso al css que tengo un a dentro de li dentro de ul*/
+    font-size: 1.3rem;
+    color: #EFF5F5;
+    position: relative;
+    text-decoration: none;
+}
+ul#link li a::before{
+    content: '';
+    width: 0%;
+    background-color: #FC7300;
+    height: 4px;
+    position: absolute;
+    bottom: -4px;
+    transition: all 0.9s;
+}
+ul#link li a:hover::before{
+    width: 100%;
+}
+ul#link li a:hover{
+    color: #FC7300;
+}
+
 #piePagina{
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr 0.5fr;
+    grid-template-columns: 1.5fr 2fr 1fr 0.5fr;
     justify-items: center;
     align-items: center;
     background-color: #181823;
     color: #EFF5F5;
     text-align: center;
     padding: 10px;
+    padding-bottom: 4%;
 }
 
 #redesSociales{
